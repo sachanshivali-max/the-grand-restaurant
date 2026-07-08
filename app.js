@@ -21,6 +21,17 @@ document.getElementById('reserveForm').addEventListener('submit', (e) => {
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.nav-links');
 
-menu.addEventListener('click', function() {
+menu.addEventListener('click', () => {
     menuLinks.classList.toggle('active');
+    console.log("Menu button clicked!");
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const menu = document.querySelector('#mobile-menu');
+    const menuLinks = document.querySelector('.nav-links');
+
+    if (menu) {
+        menu.addEventListener('click', () => {
+            menuLinks.classList.toggle('active');
+        });
+    }
 });
