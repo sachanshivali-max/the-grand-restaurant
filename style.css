@@ -223,13 +223,14 @@ footer {
         left: 0;
         text-align: center;
     }
+    .nav-links.active{
+        display: flex !important;
+
+    }
     
     .menu-toggle {
         display: block; /* Burger icon dikhayein */
         cursor: pointer;
-    }
-    .nav-links.active{
-        display: flex !important;
     }
     
 }

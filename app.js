@@ -20,12 +20,13 @@ document.getElementById('reserveForm').addEventListener('submit', (e) => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const menu = document.querySelector('#mobile-menu');
+    const menu = document.querySelector('.menu-toggle');
     const menuLinks = document.querySelector('.nav-links');
 
     if (menu) {
-        menu.addEventListener('click', function() {
+        menu.addEventListener('click', () => {
             menuLinks.classList.toggle('active');
+            console.log("Toggle clicked!");
         });
     }
 });
