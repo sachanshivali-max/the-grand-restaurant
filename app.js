@@ -18,19 +18,13 @@ document.getElementById('reserveForm').addEventListener('submit', (e) => {
     alert("Thank you! Your table request has been received. We will contact you shortly.");
     e.target.reset(); // Form clear kar dega
 });
-const menu = document.querySelector('#mobile-menu');
-const menuLinks = document.querySelector('.nav-links');
 
-menu.addEventListener('click', () => {
-    menuLinks.classList.toggle('active');
-    console.log("Menu button clicked!");
-});
 document.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('#mobile-menu');
     const menuLinks = document.querySelector('.nav-links');
 
     if (menu) {
-        menu.addEventListener('click', () => {
+        menu.addEventListener('click', function() {
             menuLinks.classList.toggle('active');
         });
     }

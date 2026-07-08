@@ -221,6 +221,7 @@ footer {
         position: absolute;
         top: 60px;
         left: 0;
+        text-align: center;
     }
     
     .menu-toggle {
@@ -228,7 +229,7 @@ footer {
         cursor: pointer;
     }
     .nav-links.active{
-        display: flex;
+        display: flex !important;
     }
     
 }
